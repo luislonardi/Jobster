@@ -79,7 +79,7 @@ npm install normalize.css
 - get something on the screen
 - react router and styled components right after
 - create pages directory in the source
-- for now Landing.js
+- for now Landing.git js
 - create component (snippets extension)
 - setup basic return
 
