@@ -1,16 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {createRoot} from 'react-dom/client';
 import 'normalize.css'
 import './index.css';
+import {store} from './store';
+import {Provider} from 'react-redux'
 
 import App from './App';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const container = document.getElementById('root');
+const root=createRoot(container);
 root.render(
-    <div>
-    <App />
-    </div>
- 
+    <Provider store={store}>
+<App tab='home'/>
+</Provider>
 );
-
